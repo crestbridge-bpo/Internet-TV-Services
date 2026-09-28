@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet & TV Service USA | Ultra-Fast Fiber & HD Cable Entertainment</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#131B2E',
+                            accent: '#00F0FF',
+                            blue: '#0066FF',
+                            purple: '#7000FF',
+                            gold: '#FFB800',
+                            glow: 'rgba(0, 240, 255, 0.15)'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F19;
+            color: #F3F4F6;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(19, 27, 46, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(0, 240, 255, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 240, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFFFFF 0%, #00F0FF 50%, #0066FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-button {
+            background: linear-gradient(135deg, #0066FF 0%, #00F0FF 100%);
+            box-shadow: 0 4px 20px rgba(0, 102, 255, 0.4);
+        }
+        .gradient-button:hover {
+            box-shadow: 0 6px 28px rgba(0, 240, 255, 0.6);
+        }
+        .pulse-call {
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7); }
+            70% { box-shadow: 0 0 0 14px rgba(0, 240, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-accent selection:text-black">
+
+    <!-- Top Utility Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-purple via-brand-blue to-cyan-500 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium flex justify-center items-center gap-2 relative z-50">
+        <span class="bg-white/20 text-white text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Launch Special</span>
+        <span>🔥 Limited Time Offer: Get <strong>$0 Installation + Free Wi-Fi 6 Router</strong> when you call today!</span>
+        <a href="tel:5042339652" class="underline hover:text-brand-accent ml-2 font-bold hidden sm:inline">Call (504) 233-9652</a>
+    </div>
+
+    <!-- Navbar Header -->
+    <header class="sticky top-0 z-40 glass-card border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-accent to-brand-blue flex items-center justify-center text-black font-extrabold text-xl shadow-lg shadow-brand-blue/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid to-black fa-bolt"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-white leading-none">
+                        INTERNET<span class="text-brand-accent">&</span>TV
+                    </span>
+                    <span class="text-[10px] tracking-widest text-gray-400 font-semibold uppercase">USA Official Partner</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#plans" class="hover:text-brand-accent transition-colors">Plans & Pricing</a>
+                <a href="#benefits" class="hover:text-brand-accent transition-colors">Why Choose Us</a>
+                <a href="#queue" class="hover:text-brand-accent transition-colors">Check Coverage</a>
+                <a href="#reviews" class="hover:text-brand-accent transition-colors">Customer Reviews</a>
+                <a href="#faq" class="hover:text-brand-accent transition-colors">FAQs</a>
+            </nav>
+
+            <!-- Call CTA Button Header -->
+            <div class="flex items-center gap-3">
+                <a href="tel:5042339652" class="gradient-button text-black font-bold px-4 sm:px-6 py-2.5 rounded-xl flex items-center gap-2 text-sm transition-all duration-300 hover:scale-[1.02]">
+                    <i class="fa-solid fa-phone-volume text-base animate-bounce"></i>
+                    <span class="hidden sm:inline">Call Now:</span>
+                    <span class="font-extrabold tracking-wide">(504) 233-9652</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+        <!-- Glowing Background Accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-blue/20 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-brand-purple/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card border-brand-accent/30 text-brand-accent text-xs sm:text-sm font-semibold mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping"></span>
+                        Next-Generation Fiber & Ultra-HD Entertainment
+                    </div>
+                    
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-6">
+                        Experience Ultra-Fast Internet & Premium TV <span class="gradient-text">Across America</span>
+                    </h1>
+                    
+                    <p class="text-gray-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Join millions of US households, small businesses, tech pros, and seniors who enjoy lightning-speed fiber broadband and 200+ HD channels—with <span class="text-white font-semibold underline decoration-brand-accent decoration-2">Zero Hidden Fees</span> and <span class="text-white font-semibold underline decoration-brand-accent decoration-2">No Contracts</span>.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="tel:5042339652" class="w-full sm:w-auto gradient-button text-black font-extrabold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-3 transition-all transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                            Call (504) 233-9652 For Instant Activation
+                        </a>
+                        <a href="#queue" class="w-full sm:w-auto glass-card hover:bg-white/10 text-white font-semibold text-base px-6 py-4 rounded-xl flex items-center justify-center gap-2 border border-white/20 transition-all">
+                            <i class="fa-solid fa-clipboard-check text-brand-accent"></i>
+                            Check Address Queue
+                        </a>
+                    </div>
+
+                    <!-- Hero Trust Badges -->
+                    <div class="pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-ban"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">No Hidden Fees</h4>
+                                <p class="text-[11px] text-gray-400">Guaranteed pricing</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">99.9% Uptime</h4>
+                                <p class="text-[11px] text-gray-400">Ultra-reliable fiber</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Free Setup</h4>
+                                <p class="text-[11px] text-gray-400">Next-day install</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">24/7 US Support</h4>
+                                <p class="text-[11px] text-gray-400">Local VIP assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Quick Call-Out Box -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl relative shadow-2xl border border-white/15">
+                        <div class="absolute -top-3 right-6 bg-brand-gold text-black text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            ★ Top Rated Provider
+                        </div>
+
+                        <div class="text-center mb-6">
+                            <span class="text-xs font-bold text-brand-accent uppercase tracking-widest">Instant Queue Lookup</span>
+                            <h3 class="text-2xl font-heading font-bold text-white mt-1">Get Special Discounts Today</h3>
+                            <p class="text-xs text-gray-400 mt-1">Select your profile to check exclusive localized offers in your state</p>
+                        </div>
+
+                        <!-- Quick Profile Selector Buttons -->
+                        <div class="space-y-3 mb-6">
+                            <a href="tel:5042339652" class="w-full flex items-center justify-between p-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center"><i class="fa-solid fa-house"></i></span>
+                                    <div class="text-left">
+                                        <div class="text-sm font-semibold text-white">Home & Families</div>
+                                        <div class="text-[11px] text-gray-400">Stream 4K, Smart Home & TV</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                            </a>
+
+                            <a href="tel:5042339652" class="w-full flex items-center justify-between p-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center"><i class="fa-solid fa-briefcase"></i></span>
+                                    <div class="text-left">
+                                        <div class="text-sm font-semibold text-white">Small Business</div>
+                                        <div class="text-[11px] text-gray-400">Dedicated Bandwidth & Static IP</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                            </a>
+
+                            <a href="tel:5042339652" class="w-full flex items-center justify-between p-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center"><i class="fa-solid fa-laptop-code"></i></span>
+                                    <div class="text-left">
+                                        <div class="text-sm font-semibold text-white">Tech Pros & Gamers</div>
+                                        <div class="text-[11px] text-gray-400">Low Latency, Gigabit Speeds</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                            </a>
+
+                            <a href="tel:5042339652" class="w-full flex items-center justify-between p-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center"><i class="fa-solid fa-heart"></i></span>
+                                    <div class="text-left">
+                                        <div class="text-sm font-semibold text-white">Seniors & Retirees</div>
+                                        <div class="text-[11px] text-gray-400">Affordable Cable & Easy Setup</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                            </a>
+                        </div>
+
+                        <!-- One Touch Call Container -->
+                        <div class="p-4 rounded-xl bg-gradient-to-r from-brand-blue/30 to-brand-purple/30 border border-brand-accent/30 text-center">
+                            <p class="text-xs text-gray-300 mb-2">Prefer direct phone assistance?</p>
+                            <a href="tel:5042339652" class="inline-flex items-center gap-2 text-brand-accent font-extrabold text-lg hover:underline">
+                                <i class="fa-solid fa-phone-volume animate-pulse"></i>
+                                (504) 233-9652
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Queue Form Section -->
+    <section id="queue" class="py-16 bg-black/40 border-y border-white/10 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-brand-accent font-semibold text-xs uppercase tracking-widest">Fast Track Order System</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">Submit Your Queue & Reserve Rates</h2>
+                <p class="text-gray-400 text-sm mt-2">Fill out this 30-second form to secure your price freeze discount before promos expire.</p>
+            </div>
+
+            <!-- Form Container -->
+            <div class="glass-card p-6 sm:p-10 rounded-2xl relative">
+                <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Full Name *</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400"><i class="fa-solid fa-user text-sm"></i></span>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-white/5 border border-white/15 rounded-xl py-3 pl-10 pr-4 text-white text-sm focus:outline-none focus:border-brand-accent transition">
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400"><i class="fa-solid fa-phone text-sm"></i></span>
+                                <input type="tel" required placeholder="(555) 000-0000" class="w-full bg-white/5 border border-white/15 rounded-xl py-3 pl-10 pr-4 text-white text-sm focus:outline-none focus:border-brand-accent transition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Zip Code -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">US Zip Code *</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400"><i class="fa-solid fa-location-dot text-sm"></i></span>
+                                <input type="text" required placeholder="e.g. 90210" class="w-full bg-white/5 border border-white/15 rounded-xl py-3 pl-10 pr-4 text-white text-sm focus:outline-none focus:border-brand-accent transition">
+                            </div>
+                        </div>
+
+                        <!-- Customer Profile -->
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Customer Profile *</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400"><i class="fa-solid fa-users text-sm"></i></span>
+                                <select required class="w-full bg-brand-dark border border-white/15 rounded-xl py-3 pl-10 pr-4 text-white text-sm focus:outline-none focus:border-brand-accent transition">
+                                    <option value="" disabled selected>Select Your Household Type</option>
+                                    <option value="family">Busy Parents / Family Household</option>
+                                    <option value="business">Small Business Owner</option>
+                                    <option value="tech">Tech Professional / Gamer</option>
+                                    <option value="senior">Senior / Retiree Special</option>
+                                    <option value="genz">Gen Z / College Student</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Interest -->
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Service Selection</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="bundle" checked class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-white/10 bg-white/5 text-center peer-checked:border-brand-accent peer-checked:bg-brand-accent/10 transition">
+                                    <i class="fa-solid fa-layer-group text-brand-accent mb-1 block"></i>
+                                    <span class="text-xs font-bold text-white">Internet + TV Bundle</span>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="internet" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-white/10 bg-white/5 text-center peer-checked:border-brand-accent peer-checked:bg-brand-accent/10 transition">
+                                    <i class="fa-solid fa-wifi text-brand-accent mb-1 block"></i>
+                                    <span class="text-xs font-bold text-white">High-Speed Internet Only</span>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="tv" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-white/10 bg-white/5 text-center peer-checked:border-brand-accent peer-checked:bg-brand-accent/10 transition">
+                                    <i class="fa-solid fa-tv text-brand-accent mb-1 block"></i>
+                                    <span class="text-xs font-bold text-white">HD Cable TV Only</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-2">
+                        <button type="submit" class="w-full gradient-button text-black font-extrabold text-base py-4 rounded-xl flex items-center justify-center gap-2 transition hover:scale-[1.01]">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Submit Queue Inquiry & Reserve Special Rates
+                        </button>
+                    </div>
+
+                    <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/50 text-emerald-300 text-sm text-center">
+                        <i class="fa-solid fa-circle-check text-base mr-1"></i> Thank you! Your queue request has been registered. An agent will contact you shortly, or call <strong>(504) 233-9652</strong> now for instant processing.
+                    </div>
+
+                    <p class="text-center text-[11px] text-gray-400">
+                        🔒 Your privacy is safe. By clicking submit, you request details for service availability at your location.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Value Pillars Section -->
+    <section id="benefits" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent font-semibold text-xs uppercase tracking-widest">Why Switch To Us</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-2">Built for Speed. Priced for Value. Designed for You.</h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-3">We eliminate traditional cable industry headaches with fair pricing, zero annual commitments, and top-tier customer service.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1 -->
+                <div class="glass-card glass-card-hover p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 text-brand-accent flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Ultra-Low Pricing</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                        Enjoy locked-in competitive rates with standard free equipment, saving you hundreds compared to legacy national carriers.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="glass-card glass-card-hover p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-400/20 to-indigo-600/20 text-purple-400 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">No Fee & No Contract</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                        Total freedom with month-to-month plans. No early termination penalties, zero hidden activation fees, and transparent bills.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="glass-card glass-card-hover p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-400/20 to-teal-600/20 text-emerald-400 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">99.9% Reliability</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                        Next-gen optical fiber infrastructure delivers consistent gigabit speeds even during high-traffic evening hours.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="glass-card glass-card-hover p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400/20 to-orange-600/20 text-amber-400 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">24/7 US Support</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                        Speak directly with expert US-based customer representatives ready to assist you day or night without long wait times.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans and Pricing Section -->
+    <section id="plans" class="py-20 bg-black/30 border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent font-semibold text-xs uppercase tracking-widest">Tailored Solutions</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-2">Choose Your Perfect Plan</h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-2">Customized bundles designed specifically for every type of American household and business.</p>
+            </div>
+
+            <!-- Plans Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Plan 1: Starter (Retirees / Basic) -->
+                <div class="glass-card glass-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative border border-white/10">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">Retirees & Basic</span>
+                            <span class="text-xs text-gray-400">$0 Activation Fee</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Fiber Essential</h3>
+                        <p class="text-gray-400 text-xs mt-1">Ideal for light streaming, news & easy web browsing.</p>
+
+                        <div class="my-6">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-gray-400 text-sm">$</span>
+                                <span class="text-4xl sm:text-5xl font-extrabold text-white">39</span>
+                                <span class="text-gray-400 text-sm">.99 / mo</span>
+                            </div>
+                            <span class="text-[11px] text-brand-accent">Price lock guarantee for 24 months</span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span><strong>300 Mbps</strong> Download / Upload Speed</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Free Wi-Fi 5 Router Included</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>No Annual Contract Required</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>75+ Essential Cable Channels</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Unlimited Data Allowance</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="tel:5042339652" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-3.5 rounded-xl text-center text-sm transition border border-white/15 block">
+                        Call (504) 233-9652 To Order
+                    </a>
+                </div>
+
+                <!-- Plan 2: Family & Gen Z (Most Popular) -->
+                <div class="glass-card glass-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative border-2 border-brand-accent shadow-xl shadow-brand-blue/20 transform lg:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-accent to-brand-blue text-black font-extrabold text-xs px-4 py-1 rounded-full uppercase tracking-wider shadow-lg">
+                        🔥 Most Popular Bundle
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-4 mt-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-accent bg-brand-accent/10 px-3 py-1 rounded-full">Families & Gen Z</span>
+                            <span class="text-xs text-brand-accent font-semibold">Free Installation</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Smart Family + TV</h3>
+                        <p class="text-gray-400 text-xs mt-1">Perfect for multi-device 4K streaming, gaming & Live Sports.</p>
+
+                        <div class="my-6">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-gray-400 text-sm">$</span>
+                                <span class="text-4xl sm:text-5xl font-extrabold text-white">69</span>
+                                <span class="text-gray-400 text-sm">.99 / mo</span>
+                            </div>
+                            <span class="text-[11px] text-brand-accent">Includes $100 Digital Gift Card Promo</span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span><strong>800 Mbps</strong> Ultra Fiber Speed</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span><strong>200+ Live HD Channels</strong> + DVR Included</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Next-Gen Wi-Fi 6 Gateway</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Zero Data Caps / No Throttle</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Free On-Demand Streaming App</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="tel:5042339652" class="w-full gradient-button text-black font-extrabold py-3.5 rounded-xl text-center text-sm transition block shadow-lg">
+                        Call (504) 233-9652 For Promo
+                    </a>
+                </div>
+
+                <!-- Plan 3: Small Business & Tech Pros -->
+                <div class="glass-card glass-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative border border-white/10">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-purple-400 bg-purple-400/10 px-3 py-1 rounded-full">Business & Tech Pros</span>
+                            <span class="text-xs text-gray-400">VIP SLA Support</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Gigabit Pro Power</h3>
+                        <p class="text-gray-400 text-xs mt-1">Engineered for heavy remote work, static IPs, and small offices.</p>
+
+                        <div class="my-6">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-gray-400 text-sm">$</span>
+                                <span class="text-4xl sm:text-5xl font-extrabold text-white">99</span>
+                                <span class="text-gray-400 text-sm">.99 / mo</span>
+                            </div>
+                            <span class="text-[11px] text-brand-accent">Dedicated priority bandwidth line</span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span><strong>1,000 Mbps (1 Gig)</strong> Symmetrical Fiber</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Static IP Option & Advanced Mesh Wi-Fi</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Dedicated 24/7 Priority Tech Line</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>Commercial HD Sports & News Package</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-accent"></i>
+                                <span>99.99% Uptime SLA Guarantee</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="tel:5042339652" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-3.5 rounded-xl text-center text-sm transition border border-white/15 block">
+                        Call (504) 233-9652 To Customize
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Customer Reviews Section -->
+    <section id="reviews" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent font-semibold text-xs uppercase tracking-widest">Verified Customer Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-2">Loved by Over 500,000+ Americans</h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-2">See how our reliable fiber internet and cable packages empower users nationwide.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Review 1: Busy Parent -->
+                <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm italic mb-4">
+                            "With 3 kids streaming 4K movies while my husband works online, our old provider froze constantly. Switching to this fiber service was the best decision! Zero lag."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-9 h-9 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-xs">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Sarah M.</h4>
+                            <p class="text-[10px] text-gray-400">Busy Parent • Texas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2: Small Business Owner -->
+                <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm italic mb-4">
+                            "Running our boutique agency requires 100% uptime. Their Gigabit Pro business line gives us flawless speeds and dedicated support whenever needed."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-9 h-9 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-xs">
+                            DR
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">David R.</h4>
+                            <p class="text-[10px] text-gray-400">Business Owner • Florida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3: Tech Pro -->
+                <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm italic mb-4">
+                            "Low latency ping rates for gaming and uploading massive developer files. Plus, no hidden fees on the bill! Exactly as advertised."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-9 h-9 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs">
+                            AK
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Alex K.</h4>
+                            <p class="text-[10px] text-gray-400">Software Engineer • California</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4: Senior/Retiree -->
+                <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm italic mb-4">
+                            "The customer support team helped me select a low-cost plan with all my favorite cable news channels. Very respectful and easy installation!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">
+                            RT
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Robert T.</h4>
+                            <p class="text-[10px] text-gray-400">Retiree • Ohio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-black/40 border-t border-white/10 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-accent font-semibold text-xs uppercase tracking-widest">Got Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-2">Frequently Asked Questions</h2>
+                <p class="text-gray-400 text-sm mt-2">Clear answers about setup, contracts, pricing, and availability.</p>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button onclick="toggleAccordion('faq1')" class="w-full p-5 text-left flex justify-between items-center text-white font-semibold text-sm sm:text-base hover:text-brand-accent transition">
+                        <span>Are there any hidden fees or price hikes after signing up?</span>
+                        <i id="faq1-icon" class="fa-solid fa-chevron-down text-xs text-brand-accent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq1" class="hidden px-5 pb-5 text-gray-400 text-xs sm:text-sm leading-relaxed border-t border-white/5 pt-3">
+                        No! We pride ourselves on 100% pricing transparency. What you see is what you pay. There are no hidden broadcast surcharges, unexpected router rental hikes, or surprise fees.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button onclick="toggleAccordion('faq2')" class="w-full p-5 text-left flex justify-between items-center text-white font-semibold text-sm sm:text-base hover:text-brand-accent transition">
+                        <span>Do I have to sign an annual contract?</span>
+                        <i id="faq2-icon" class="fa-solid fa-chevron-down text-xs text-brand-accent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq2" class="hidden px-5 pb-5 text-gray-400 text-xs sm:text-sm leading-relaxed border-t border-white/5 pt-3">
+                        Never. All our residential and standard business plans operate on a flexible month-to-month basis. You can modify or cancel your service anytime without early termination penalties.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button onclick="toggleAccordion('faq3')" class="w-full p-5 text-left flex justify-between items-center text-white font-semibold text-sm sm:text-base hover:text-brand-accent transition">
+                        <span>How fast can I get my service installed?</span>
+                        <i id="faq3-icon" class="fa-solid fa-chevron-down text-xs text-brand-accent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq3" class="hidden px-5 pb-5 text-gray-400 text-xs sm:text-sm leading-relaxed border-t border-white/5 pt-3">
+                        In most serviced US areas, we offer next-day professional installation or instant self-setup kit delivery. Call our phone line at (504) 233-9652 to check real-time technician slots in your zip code.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="glass-card rounded-xl border border-white/10 overflow-hidden">
+                    <button onclick="toggleAccordion('faq4')" class="w-full p-5 text-left flex justify-between items-center text-white font-semibold text-sm sm:text-base hover:text-brand-accent transition">
+                        <span>Can I keep my current home telephone or cable setup?</span>
+                        <i id="faq4-icon" class="fa-solid fa-chevron-down text-xs text-brand-accent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq4" class="hidden px-5 pb-5 text-gray-400 text-xs sm:text-sm leading-relaxed border-t border-white/5 pt-3">
+                        Yes, we offer seamless number porting for your existing home landlines or business phone systems, along with full compatibility for smart TVs and streaming hardware.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-brand-accent/30 bg-gradient-to-r from-brand-card via-brand-dark to-brand-card text-center relative overflow-hidden">
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mb-4">
+                        Ready for High-Speed Internet & Premium HD Cable?
+                    </h2>
+                    <p class="text-gray-300 text-sm sm:text-base mb-8">
+                        Call our US phone desk now to check coverage, lock in promotional pricing, and receive zero-cost equipment installation!
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="tel:5042339652" class="w-full sm:w-auto gradient-button text-black font-extrabold px-8 py-4 rounded-xl text-base flex items-center justify-center gap-3 transition">
+                            <i class="fa-solid fa-phone-volume text-lg"></i>
+                            Call (504) 233-9652 Now
+                        </a>
+                        <a href="#queue" class="w-full sm:w-auto glass-card hover:bg-white/10 text-white font-semibold px-6 py-4 rounded-xl text-base flex items-center justify-center gap-2 border border-white/20">
+                            Submit Queue Request
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 text-gray-400 text-xs py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Internet & TV USA</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Authorized internet & TV service dealer providing ultra-fast fiber connection and digital cable entertainment nationwide.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Quick Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#plans" class="hover:text-white transition">Bundle Plans</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition">Why Choose Us</a></li>
+                        <li><a href="#queue" class="hover:text-white transition">Queue Form</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">Customer Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Service Profiles</h4>
+                    <ul class="space-y-2">
+                        <li><a href="tel:5042339652" class="hover:text-white transition">Family Households</a></li>
+                        <li><a href="tel:5042339652" class="hover:text-white transition">Small Businesses</a></li>
+                        <li><a href="tel:5042339652" class="hover:text-white transition">Tech Pros & Gamers</a></li>
+                        <li><a href="tel:5042339652" class="hover:text-white transition">Senior Discount Rates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Direct Phone Ordering</h4>
+                    <p class="mb-2">Toll-Free Activation Line:</p>
+                    <a href="tel:5042339652" class="text-brand-accent font-extrabold text-base block hover:underline">
+                        (504) 233-9652
+                    </a>
+                    <p class="mt-2 text-[10px] text-gray-400">Available 24/7/365 across all US timezones.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-6 text-center text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Internet & TV Service USA. All Rights Reserved. Independent Authorized Service Provider.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Floating Click-To-Call Bar Widget -->
+    <div class="fixed bottom-4 right-4 z-50 flex items-center gap-2">
+        <a href="tel:5042339652" class="pulse-call gradient-button text-black font-extrabold px-5 py-3.5 rounded-full flex items-center gap-3 shadow-2xl hover:scale-105 transition-transform">
+            <div class="w-8 h-8 rounded-full bg-black text-brand-accent flex items-center justify-center text-sm">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="flex flex-col text-left">
+                <span class="text-[10px] uppercase tracking-wider font-extrabold leading-none text-black/70">Need Help? Call Us</span>
+                <span class="text-sm font-black leading-tight">(504) 233-9652</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Embedded Interactive JS Logic -->
+    <script>
+        // Toggle Accordion functionality for FAQs
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Handle Queue Form Submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const message = document.getElementById('formSuccessMessage');
+            message.classList.remove('hidden');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
